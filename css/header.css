@@ -1,75 +1,37 @@
-.container{
-    width: 100%;
-    height: 200px;
-    background-color:#000;
-}
 header{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.container-nav{
+    width: 100%;
+    height: 12,5rem;
+    background-color:#000;
+    margin: auto;
 }
 .navbar{
     flex: 1;
     width: 100%;
-    padding: 10px;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
 }
-.logo img{
+.container-nav .logo img{
     width: 25rem;
-    height: 6rem;
-    margin-top: 40px;
-    margin-left: 40px;
+    height: 5rem;
+    align-self: center;
+    margin-top: 17px;
 }
-header nav{
+.nav{
+    flex: 1;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content:stretch ;
     align-items: center;
-    justify-content: space-arou;
-    height: 100%;
+    justify-content: flex-end;
 }
-header nav img{
-    width: 51px;
-    height: 52px;
-    margin: 20px;
+.nav img{
+    width: 50px;
+    height: 50px;
 }
-@media(width>600px){
-    header {
-        flex-direction: row;
-    }
-    .menu-opener{
-        display: none;
-    }
-    header nav{
-        display: flex;
-        flex-direction:row;
-    }
-}
-#divBusca{
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:300px;
-    height:32px;
-  }
-  
-  #txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:191px;
-  }
-  
-  #btnBusca{
-    border:none;
-    float:left;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-weight:bold;
-    background:#5F9EA0;
-  }
-  
-  #divBusca img{
-    float:left;
-  }
