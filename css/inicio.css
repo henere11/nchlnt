@@ -1,6 +1,32 @@
 .container{
     display: flex;
-    max-width: 100rem;
+    max-width: 116rem;
     margin: auto;
     padding: 1rem;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.banner{
+    width: 1018px;
+    height: 429px;
+}
+.banner img{
+    border-radius: 10px;
+}
+.bannerTitle img{
+    width: 500px;
+    height: 435px;
+}
+
+.container2{
+    display: flex;
+    max-width: 116rem;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.banner2{
+    width: 1018px;
+    height: 429px;
 }
