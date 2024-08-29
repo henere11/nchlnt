@@ -29,4 +29,22 @@
 .banner2{
     width: 1018px;
     height: 429px;
+    margin-right: 75px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    margin-right: 100px;
+}
+.bannerTitle2{
+    color: white;
+    font-size: 4rem;
+}
+.banner2 img{
+    border-radius: 10px;
+}
+.subTitle2{
+    font-size: 1.2rem;
+    color: white;
 }
