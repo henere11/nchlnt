@@ -1,38 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
 html {
     min-height: 100%;
     margin: 0;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover; 
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo {
-    margin-top: 5rem;
+.logoLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 100%; 
-    height: auto; 
+    height: auto;
 }
 
-.title {
-    text-align: center; 
-    font-size: 3rem;
-    margin-top: 1rem; 
+.title{
+    text-align: center;
+    font-size: 3rem; 
 }
 
 .cd {
     width: 100%;
     max-width: 500px; 
-    margin: 5rem auto; 
+    margin: 4rem auto; 
 }
 
 .form {
@@ -69,7 +80,6 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1.25rem; 
-    margin-left: 60px;
 }
 
 
