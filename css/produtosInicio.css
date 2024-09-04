@@ -14,7 +14,7 @@
 .linhaDivisoria{
     border: 2px solid #fff;
     width: 600px;
-    border-radius: 20px;   
+    border-radius: 20px;  
     height: 0;
     margin-top: 35px;
 }
@@ -28,6 +28,15 @@
     margin-top: 44px;
     justify-content: center;
     align-items: center;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
 }
 .escolha2{
     display: flex;
@@ -38,6 +47,15 @@
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
 }
 .containerOpcao{
     display: flex;
@@ -65,6 +83,15 @@
     border-radius: 50px;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
 }
 .tituloProdutos{
     color: #000;
@@ -74,4 +101,27 @@
     font-size: 2rem;
     color: #000;
     margin-bottom: 50px;
+}
+
+.escolha:hover{
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.escolha2:hover{
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.categoria:hover{
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
