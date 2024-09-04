@@ -1,0 +1,155 @@
+
+html {
+    min-height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: -webkit-linear-gradient(#000000,#004D52,#B4B4B4);
+    background-repeat:repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    
+}
+ 
+main {
+    display: flex;
+    flex:auto; 
+    padding: 20px;
+}
+ 
+.produto {
+    width: 30%;
+    gap: 10px;
+    height: 560px; 
+    display:flex;
+    background-color: #fff; 
+    border-radius: 8px;
+    border: 1px solid #ddd; 
+    margin-left: 100px;
+    overflow:hidden;
+    
+}
+.produto img {
+    margin-left: 5px;
+    width: 100%; 
+    padding: 30px;
+ 
+}
+ 
+.favorito{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    align-self:flex-end;
+    z-index: 2;
+    position: fixed;
+    margin: 10px;
+}
+
+.favorito:hover {
+    block-size: 3.5%;
+}
+
+.mais-imagem{
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.produto-imagem{
+    gap: 10px;
+    margin-left: 100px;
+    width: 150px ;
+    height: 175px; 
+    background-color: #fff; 
+    border-radius: 8px;
+    border: 1px solid #ddd; 
+    margin-top: 10px;
+    cursor:pointer;
+    align-content: center;
+}
+
+.produto-imagem img{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+    
+}
+
+
+
+.produto-desc {
+    width: 850px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 30px;
+    margin-left: 30px;
+    
+
+}
+.produto-desc h1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
+ 
+.produto-desc p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 70px;
+
+}
+ 
+.tamanho {
+    margin-top: 20px;
+}
+ 
+.tamanho button {
+    width: 89px;
+    height: 63px;
+    font-size: 36px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #000;
+    border: solid #000 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+
+}
+ 
+.tamanho button:hover {
+    background-color: #444;
+}
+
+ 
+.preco {
+    font-size: 64px;
+    color: #000;
+    margin-top: 30px;
+
+}
+ 
+.acao button {
+    width: 396px;
+    height: 97px;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+ 
+.acao button:hover {
+    background-color: #333;
+}
+
