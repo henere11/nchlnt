@@ -17,6 +17,7 @@ main {
     display: flex;
     flex:auto; 
     padding: 20px;
+    margin-top: 35px;
 }
  
 .produto {
@@ -32,7 +33,7 @@ main {
     
 }
 .produto img {
-    margin-left: 5px;
+    margin-left: -55px;
     width: 100%; 
     padding: 30px;
  
@@ -44,12 +45,11 @@ main {
     cursor: pointer;
     align-self:flex-end;
     z-index: 2;
-    position: fixed;
     margin: 10px;
 }
 
 .favorito:hover {
-    block-size: 3.5%;
+    block-size: 5.5%;
 }
 
 .mais-imagem{
@@ -153,3 +153,96 @@ main {
     background-color: #333;
 }
 
+/* Estilos para telas com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+    .container-nav {
+        height: auto; /* Ajusta a altura do container-nav */
+        padding: 1rem; /* Ajusta o padding */
+    }
+    
+    .navbar {
+        flex-direction: column; /* Alinha o conteúdo verticalmente */
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 15rem; /* Reduz o tamanho do logo */
+        height: auto;
+        margin-left: 0;
+    }
+    
+    .nav {
+        flex-direction: column; /* Alinha os ícones verticalmente */
+        padding: 1rem 0;
+    }
+    
+    .nav img {
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem;
+    }
+    
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .produto {
+        width: 100%; /* Ajusta o produto para ocupar toda a largura disponível */
+        margin-left: 0;
+        height: auto; /* Ajusta a altura automaticamente */
+        margin-bottom: 20px; /* Adiciona um espaço inferior */
+    }
+    
+    .produto-imagem {
+        width: 100%; /* Ajusta a largura das imagens do produto */
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+    }
+    
+    .produto-imagem img {
+        width: 100%; /* Ajusta a largura das imagens internas */
+    }
+    
+    .produto-desc {
+        width: 100%; /* Ajusta o produto-desc para ocupar toda a largura disponível */
+        margin-left: 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .produto-desc h1 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+    
+    .produto-desc p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+        margin-bottom: 30px;
+    }
+    
+    .tamanho button {
+        width: 60px; /* Reduz o tamanho dos botões */
+        height: 40px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    
+    .preco {
+        font-size: 36px; /* Reduz o tamanho do preço */
+        margin-top: 20px;
+    }
+    
+    .acao button {
+        width: 100%; /* Ajusta a largura dos botões de ação */
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .favorito {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+}
