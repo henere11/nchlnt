@@ -1,15 +1,17 @@
 footer{
-    display:flex;
+    display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
-    height: 500px;
-    background-color: #000;
 }
 .rodape{
+    background-color: black;
     display:flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 450px;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 .redes{
     display: flex;
@@ -18,6 +20,35 @@ footer{
 }
 
 .redes img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+}
+.logo-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-rodape img{
+    width: 28rem;
+    height: 9rem;
+}
+.titulo-rodape{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.subtitulo-rodape{
+    color: #fff;
+    font-size: 0.85rem;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.payment img{
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
 }
