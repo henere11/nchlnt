@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 600px) {
     .title {
-        font-size: 2rem; 
+        font-size: 3rem; 
     }
 
     .cd {
@@ -83,7 +83,7 @@ body {
     }
 
     .textarea {
-        font-size: 1rem; 
+        font-size: 1.875rem; 
     }
 
     .button {
