@@ -77,8 +77,6 @@ main {
     
 }
 
-
-
 .produto-desc {
     width: 850px;
     padding: 20px;
@@ -133,7 +131,7 @@ main {
 }
  
 .acao button {
-    width: 396px;
+    width: 370px;
     height: 97px;
     padding: 15px 30px;
     font-size: 20px;
