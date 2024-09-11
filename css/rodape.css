@@ -2,7 +2,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+
 }
 .rodape{
     background-color: black;
@@ -52,3 +52,34 @@ footer{
     height: 80px;
     margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        max-width: 100%;
+    }
+    .rodape {
+    flex-direction: column;
+    height: auto;
+    width: 600px;
+    text-align: center;
+
+    }
+    
+    .redes img {
+    width: 30px;
+    height: 30px;
+    }
+    
+    .logo-rodape img {
+    width: 20rem;
+    height: auto;
+    }
+    
+    .payment img {
+    width: 150px;
+    height: auto;
+    }
+    }

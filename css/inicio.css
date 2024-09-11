@@ -48,3 +48,63 @@
     font-size: 1.2rem;
     color: white;
 }
+
+@media(max-width: 600px) {
+    .anuncios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .banner {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .banner img {
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    }
+    
+    .bannerTitle img {
+    width: 70%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .banner2 {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    }
+
+    .banner2 img{
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    .texto {
+    margin: 1rem;
+    }
+    
+    .bannerTitle2 {
+    font-size: 2rem;
+    }
+    
+    .subTitle2 {
+    font-size: 1rem;
+    }
+    }

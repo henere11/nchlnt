@@ -44,11 +44,13 @@ body {
 
 .cd {
     width: 100%;
+    
     max-width: 500px; 
     margin: 4rem auto; 
 }
 
 .form {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +81,7 @@ body {
 }
 
 .subtitle {
+    margin-top: 10px;
     text-decoration: none;
     color: #fff;
     font-size: 1.25rem; 
@@ -92,10 +95,11 @@ body {
 
     .cd {
         margin: 5rem 20px; 
+
     }
 
     .textarea {
-        font-size: 1.875rem; 
+        font-size: 1.5rem; 
     }
 
     .button {
@@ -104,6 +108,11 @@ body {
 
     .subtitle {
         font-size: 1rem;
+
+    }
+    .form {
+        width: 80%;
+        height: 250px;
     }
 
 }
