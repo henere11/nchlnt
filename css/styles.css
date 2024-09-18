@@ -169,7 +169,7 @@ main {
     }
     
     .nav {
-        flex-direction: column; /* Alinha os ícones verticalmente */
+        flex-direction: row; /* Alinha os ícones verticalmente */
         padding: 1rem 0;
     }
     
@@ -177,6 +177,7 @@ main {
         width: 40px;
         height: 40px;
         margin: 0.5rem;
+        
     }
     
     main {
