@@ -49,62 +49,71 @@
     color: white;
 }
 
-@media(max-width: 600px) {
-    .anuncios{
+@media (max-width: 600px) {
+    .anuncios {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
         padding: 0;
-    }
-    
-    .banner {
-    width: 90%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .banner img {
-    width: 90%;
-    align-items: center;
-    align-self: center;
-    }
-    
-    .bannerTitle img {
-    width: 70%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .banner2 {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
+        position: relative;
     }
 
-    .banner2 img{
+    .banner {
         width: 90%;
         height: auto;
-        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
-    
-    .texto {
-    margin: 1rem;
+
+    .banner img {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        display: block;
     }
-    
+
+    .bannerTitle img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .banner2 {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .banner2 img {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        display: block;
+    }
+
     .bannerTitle2 {
-    font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 20px;
     }
-    
+
     .subTitle2 {
-    font-size: 1rem;
+        font-size: 0.8rem;
+        align-items: center;
+        margin: 20px;
     }
-    }
+}
