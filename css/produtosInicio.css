@@ -128,52 +128,49 @@
 
 @media (max-width: 600px) {
     .containerProdutos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
     }
     
     .linhaDivisoria {
-        width: 80%;
-        margin: 0 auto; /* Centraliza a linha divisória */
+    width: 80%;
     }
     
     .escolha,
     .escolha2 {
-        width: 90%; /* Mesmo tamanho para ambos os contêineres */
-        margin: 0 auto; /* Centraliza os contêineres */
-        height: auto;
-        display: flex;
-        justify-content: center; /* Garante centralização dos conteúdos internos */
+    width: 90%;
+    height: auto;
+    margin-left:30px;
+    margin: 10px auto;
     }
     
     .escolha img,
     .escolha2 img {
-        width: 50%;
-        height: auto;
-        margin: 0 auto; /* Centraliza as imagens */
-        display: block;
+    width: 50%;
+    height: auto;
+    padding: 15px;
     }
     
     .containerOpcao {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-    
-    .categoria {
-        width: 100%; /* Ajusta para ocupar o máximo da tela no mobile */
-        max-width: 550px;
-        margin: 0 auto; /* Centraliza o contêiner */
+    flex-direction: column;
+    margin-top: 20px;
     }
 
-    /* Forçar mesmo tamanho mínimo para os contêineres */
-    .escolha,
-    .escolha2 {
-        min-height: 200px; /* Ajuste para garantir que ambos tenham a mesma altura mínima */
-        min-height: 400px; /* Ajuste para garantir que ambos tenham a mesma altura mínima */
+    .categoria{
+        display: flex;
+        height: 142px;
+        width: 75%;
+        background-color: #fff;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .tituloProdutos{
+        color: #000;
+        font-size: 2rem;
     }
 }
 
