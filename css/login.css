@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap&#39;);
 
 html {
     min-height: 100%;
@@ -33,24 +33,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
+}
+.logoLogin img{
+    margin-bottom:80px ;
 }
 
 .title{
     text-align: center;
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 
 .cd {
     width: 100%;
-    
-    max-width: 500px; 
-    margin: 4rem auto; 
+    max-width: 500px;
+    margin: 4rem auto;
 }
 
 .form {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,13 +61,13 @@ body {
 
 .textarea {
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     height: 60px;
-    font-size: 1.875rem; 
+    font-size: 1.875rem;
     padding: 10px 25px;
     margin-bottom: 15px;
     border-radius: 30px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .button {
@@ -74,36 +75,36 @@ body {
     height: 50px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #fff  ; 
-    color: #000000; 
-    border: none; 
-    cursor: pointer; 
+    background-color: #fff  ;
+    color: #000000;
+    border: none;
+    cursor: pointer;
 }
 
 .subtitle {
     margin-top: 10px;
     text-decoration: none;
     color: #fff;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
 }
 
 
 @media (max-width: 600px) {
     .title {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
 
     .cd {
-        margin: 5rem 20px; 
+        margin: 5rem 20px;
 
     }
 
     .textarea {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .button {
-        width: 100px; 
+        width: 100px;
     }
 
     .subtitle {
@@ -113,6 +114,19 @@ body {
     .form {
         width: 80%;
         height: 250px;
+        align-items: center;
+        justify-content: center;
     }
-
+    .logoLogin img{
+        width: 276px;
+        height: 90px;
+    }
+    .textarea {
+        font-size: 1.2rem;
+    }
+    .subtitle{
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
