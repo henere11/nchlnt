@@ -2,6 +2,8 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    max-width:1920px;
 
 }
 .rodape{
@@ -58,7 +60,8 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;    
-        max-width: 100%;
+        width: 100%;
+        max-width:600px;
     }
     .rodape {
     flex-direction: column;
