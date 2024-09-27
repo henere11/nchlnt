@@ -1,19 +1,19 @@
 footer{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    max-width:1920px;
-
+    align-items: center;    
+    
 }
 .rodape{
     background-color: black;
     display:flex;
-    flex-direction: row;
     width: 100%;
+    max-width: 1920px;
+    flex-direction: row;
     height: 450px;
     justify-content: space-around;
     margin-top: 100px;
+    
 }
 .redes{
     display: flex;
