@@ -1,97 +1,114 @@
-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    
+* {
+    box-sizing: border-box; 
 }
-.rodape{
-    background-color: black;
-    display:flex;
-    width: 100%;
-    max-width: 1920px;
-    flex-direction: row;
-    height: 450px;
-    justify-content: space-around;
-    margin-top: 100px;
-    
-}
-.redes{
+
+footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    min-width: 100%; 
+
 }
 
-.redes img{
+.rodape {
+    background-color: black;
+    display: flex;
+    width: 100%; 
+    min-width: 100%; 
+    height: 450px;
+    justify-content: space-around;
+    margin: 100px 0 0; 
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
     width: 50px;
     height: 50px;
 }
 
-.divSocial{
+.divSocial {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.logo-rodape{
+.logo-rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.logo-rodape img{
+
+.logo-rodape img {
     width: 28rem;
     height: 9rem;
 }
-.titulo-rodape{
+
+.titulo-rodape {
     color: #fff;
     font-size: 1.5rem;
 }
-.subtitulo-rodape{
+
+.subtitulo-rodape {
     color: #fff;
     font-size: 0.85rem;
 }
-.payment{
+
+.payment {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.payment img{
+
+.payment img {
     width: 200px;
     height: 80px;
     margin-top: 10px;
 }
-h2{
+
+h2 {
     color: #fff;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
-    footer{
-        display: flex;
+    footer {
         flex-direction: row;
         align-items: center;    
         width: 100%;
-        max-width:600px;
     }
+    
     .rodape {
-    flex-direction: column;
-    height: auto;
-    width: 600px;
-    text-align: center;
-
+        flex-direction: column;
+        height: auto;
+        min-height: 450px; 
+        width: 100%; 
+        min-width: 100%; 
+        text-align: center;
+        margin: 0; 
     }
     
     .redes img {
-    width: 30px;
-    height: 30px;
+        width: 30px;
+        height: 30px;
     }
     
     .logo-rodape img {
-    width: 20rem;
-    height: auto;
+        width: 20rem;
+        height: auto;
     }
     
     .payment img {
-    width: 150px;
-    height: auto;
+        width: 150px;
+        height: auto;
     }
-    }
+}

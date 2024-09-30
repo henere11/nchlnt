@@ -3,8 +3,6 @@ html {
     min-height: 100%;
 }
 body {
-    font-family: Arial, sans-serif;
-    background: -webkit-linear-gradient(#000000,#004D52,#B4B4B4);
     background-repeat:repeat;
     color: #fff;
     margin: 0;
