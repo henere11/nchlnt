@@ -44,3 +44,23 @@
         text-align: center; 
     }
 }
+@media (max-width: 900px) {
+    .demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; 
+    }
+    
+    .camisa img,
+    .tenis img {
+        width: 70%;
+        margin: 0 auto; 
+        display: block; 
+    }
+    
+    .subTitleProdutos {
+        text-align: center; 
+    }
+}
