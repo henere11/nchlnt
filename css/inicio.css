@@ -3,7 +3,6 @@
     max-width: 116rem;
     margin: auto;
     padding: 1rem;
-    justify-content: space-around;
     flex-direction: row;
 }
 .banner{

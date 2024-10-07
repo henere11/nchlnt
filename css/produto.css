@@ -1,19 +1,17 @@
-
 html {
     min-height: 100%;
 }
 body {
-    background-repeat:repeat;
+    background-repeat: repeat;
     color: #fff;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    
 }
  
 main {
     display: flex;
-    flex:auto; 
+    flex: auto; 
     padding: 20px;
     margin-top: 35px;
 }
@@ -22,59 +20,51 @@ main {
     width: 30%;
     gap: 10px;
     height: 560px; 
-    display:flex;
+    display: flex;
     background-color: #fff; 
     border-radius: 8px;
     border: 1px solid #ddd; 
     margin-left: 100px;
-    overflow:hidden;
-    
+    overflow: hidden;
 }
 .produto img {
     margin-left: -55px;
     width: 100%; 
     padding: 30px;
- 
 }
  
-.favorito{
-    width:30px;
-    height:30px;
+.favorito {
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    align-self:flex-end;
+    align-self: flex-end;
     z-index: 2;
     margin: 10px;
 }
-
 .favorito:hover {
     block-size: 5.5%;
 }
-
-.mais-imagem{
+.mais-imagem {
     flex-direction: column;
     margin-top: 15px;
 }
-
-.produto-imagem{
+.produto-imagem {
     gap: 10px;
     margin-left: 100px;
-    width: 150px ;
+    width: 150px;
     height: 175px; 
     background-color: #fff; 
     border-radius: 8px;
     border: 1px solid #ddd; 
     margin-top: 10px;
-    cursor:pointer;
+    cursor: pointer;
     align-content: center;
 }
-
-.produto-imagem img{
+.produto-imagem img {
     width: 150px;
     height: auto;
     border-radius: 30px;
-    
 }
-
 .produto-desc {
     width: 850px;
     padding: 20px;
@@ -87,19 +77,15 @@ main {
     color: #000;
     margin-bottom: 20px;
 }
- 
 .produto-desc p {
     font-size: 16px;
     color: #000;
     line-height: 1.5;
     margin-bottom: 70px;
-
 }
- 
 .tamanho {
     margin-top: 20px;
 }
- 
 .tamanho button {
     width: 89px;
     height: 63px;
@@ -113,21 +99,15 @@ main {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
-
 }
- 
 .tamanho button:hover {
     background-color: #444;
 }
-
- 
 .preco {
     font-size: 64px;
     color: #000;
     margin-top: 30px;
-
 }
- 
 .acao button {
     width: 370px;
     height: 97px;
@@ -142,101 +122,171 @@ main {
     transition: background-color 0.3s;
     margin-top: 20px;
 }
- 
 .acao button:hover {
     background-color: #333;
 }
-
-/* Estilos para telas com largura máxima de 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .container-nav {
-        height: auto; /* Ajusta a altura do container-nav */
-        padding: 1rem; /* Ajusta o padding */
+        height: auto;
+        padding: 1rem;
     }
-    
     .navbar {
-        /*display: none;*/
-        flex-direction: column; /* Alinha o conteúdo verticalmente */
+        flex-direction: column;
         align-items: center;
     }
-    
     .logo img {
-        width: 15rem; /* Reduz o tamanho do logo */
+        width: 15rem;
         height: auto;
         margin-left: 0;
     }
-    
     .nav {
-        flex-direction: row; /* Alinha os ícones verticalmente */
+        flex-direction: row;
         padding: 1rem 0;
     }
-    
     .nav img {
         width: 40px;
         height: 40px;
         margin: 0.5rem;
-        
     }
-    
     main {
         flex-direction: column;
         padding: 10px;
     }
-    
     .produto {
-        width: 100%; /* Ajusta o produto para ocupar toda a largura disponível */
+        width: 90%;
         margin-left: 0;
-        height: auto; /* Ajusta a altura automaticamente */
-        margin-bottom: 20px; /* Adiciona um espaço inferior */
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
     .produto-imagem {
         display: none;
-        width: 100%; /* Ajusta a largura das imagens do produto */
+        width: 90%;
         margin-left: 0;
         margin-top: 10px;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
     .produto-imagem img {
-        width: 100%; /* Ajusta a largura das imagens internas */
+        width: 90%;
     }
-    
     .produto-desc {
-        width: 100%; /* Ajusta o produto-desc para ocupar toda a largura disponível */
+        width: 90%;
         margin-left: 0;
         padding: 10px;
         border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
     .produto-desc h1 {
-        font-size: 24px; /* Reduz o tamanho do título */
+        font-size: 24px;
     }
-    
     .produto-desc p {
-        font-size: 14px; /* Reduz o tamanho do texto */
+        font-size: 14px;
         margin-bottom: 30px;
     }
-    
     .tamanho button {
-        width: 60px; /* Reduz o tamanho dos botões */
+        width: 60px;
         height: 40px;
         font-size: 16px;
         margin-right: 5px;
     }
-    
     .preco {
-        font-size: 36px; /* Reduz o tamanho do preço */
+        font-size: 36px;
         margin-top: 20px;
     }
-    
     .acao button {
-        width: 100%; /* Ajusta a largura dos botões de ação */
+        width: 100%;
         height: 50px;
         font-size: 18px;
         margin-top: 10px;
     }
-    
+    .favorito {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-nav {
+        height: auto;
+        padding: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        width: 15rem;
+        height: auto;
+        margin-left: 0;
+    }
+    .nav {
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+    .nav img {
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem;
+    }
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .produto {
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .produto-imagem {
+        display: none;
+        width: 90%;
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .produto-imagem img {
+        width: 90%;
+    }
+    .produto-desc {
+        width: 90%;
+        margin-left: 0;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .produto-desc h1 {
+        font-size: 24px;
+    }
+    .produto-desc p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .tamanho button {
+        width: 60px;
+        height: 40px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .preco {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .acao button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
     .favorito {
         width: 25px;
         height: 25px;
