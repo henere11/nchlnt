@@ -1,132 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacola NCHLNT</title>
-    <link rel="stylesheet" href="css/sacola.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/base.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/sacola.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacola NCHLNT</title>
+  <link rel="stylesheet" href="css/sacola.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/rodape.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="container-nav">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>      
-                </div>
-                <div class="nav">
-                    <img src="img/lupa.png" alt="">
-                    <a href=""><img src="img/sacola.png" alt=""></a>   
-                    <a href="login.html"><img src="img/pessoa.png" alt=""></a>   
-                </div>
-            </div>
+  <header>
+    <div class="container-nav">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt=""></a>
         </div>
-    </header>
-    
-    <h1>Shopping Cart</h1>
+        <div class="nav">
+          <img src="img/lupa.png" alt="">
+          <a href=""><img src="img/sacola.png" alt=""></a>
+          <a href="login.html"><img src="img/pessoa.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="shopping-cart">
+  <section>
+    <div class="container">
+       <h2 class="px-5 p-2">My shopping cart</h2>
+       <div class="cart">
+          <div class="col-md-12 col-lg-10 mx-auto">
+             <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item">
+                      <img src="img/camisa3.png" alt="">
+                      <h5>iPhone 11 128GB Black( $1219 )</h5>
+                   </div>
 
-  <div class="column-labels">
-    <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
-    <label class="product-price">Price</label>
-    <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">Total</label>
-  </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Dingo Dog Bones</div>
-      <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
-    </div>
-    <div class="product-price">12.99</div>
-    <div class="product-quantity">
-      <input type="number" value="2" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">25.98</div>
-  </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
-      <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
-    </div>
-    <div class="product-price">45.99</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">45.99</div>
-  </div>
-
-  <div class="totals">
-    <div class="totals-item">
-      <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">71.97</div>
-    </div>
-    <div class="totals-item">
-      <label>Tax (5%)</label>
-      <div class="totals-value" id="cart-tax">3.60</div>
-    </div>
-    <div class="totals-item">
-      <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
-    </div>
-    <div class="totals-item totals-item-total">
-      <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">90.57</div>
-    </div>
-  </div>
-      
-      <button class="checkout">Checkout</button>
-
-</div>
-    <section class="footer">
-        <footer>
-            <div class="rodape">
-                <div class="divSocial">
-                    <div class="redes">
-                        <a href=""><img src="https://img.icons8.com/?size=40&id=19318&format=png&color=000000%20alt=" alt=""></a>
-                        <a href=""><img src="https://img.icons8.com/?size=100&id=yGcWL8copNNQ&format=png&color=000000" alt=""></a>
-                        <a href=""><img src="https://img.icons8.com/?size=40&id=Xy10Jcu1L2Su&format=png&color=000000" alt=""></a>
-                    </div>
-                    <a href="contato.html"><h2>Entre em contato com nós!</h2></a>
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="phone-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                      </div>
+                      <h5>$ <span id="phone-total">1219</span> </h5>
+                      <input type="image" class="remove-item" src="img/lixo.png">
+                   </div>
                 </div>
-                
-                <div class="logo-rodape">
-                    <img src="img/logo2.png" alt="">
-                    <p class="subtitulo-rodape" style="margin-top: 20px;">© 2024 NCHLNT. Todos os direitos reservados.</p>
-                </div>
+             </div>
 
-                <div class="payment">
-                    <p class="subtitulo-rodape">FORMAS DE PAGAMENTO</p>
-                    <img src="img/pagamento.png" alt="">
+             <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item mx-auto">
+                      <img src="img/camisa3.png" alt="">
+                      <h5>iPhone 11 Silicone Case - Black( $59 )</h5>
+                   </div>
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="case-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="case-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button  id="case-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                      </div>
+                      <h5>$ <span id="case-total">59</span> </h5>
+                      <input type="image" class="remove-item" src="img/lixo.png">
+                   </div>
                 </div>
-            </div>
-        </footer>
-    </section>
+             </div>
+
+             <div class="cart-item">
+                <div class="row g-2">
+
+                   <div class="col-6">
+                      <h5>Subtotal: </h5>
+                      <h5>Tax:</h5>
+                      <h5>Total:</h5>
+                   </div>
+
+                   <div class="col-6 status">
+                      <h5>$<span id="sub-total">1,278</span></h5>
+                      <h5>$<span id="tax-amount">0</span></h5>
+                      <h5>$<span id="total-price">1,278</span></h5>
+                   </div>
+                   
+                </div>
+             </div>
+             <div class="col-md-12 pt-4 pb-4">
+                <button type="button" class="btn btn-success check-out">Check Out</button>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <script src="js/sacola.js"></script>
 </body>
 
 </html>

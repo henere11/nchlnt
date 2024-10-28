@@ -1,77 +1,80 @@
-/* Set rates + misc */
-var taxRate = 0.05;
-var shippingRate = 15.00; 
-var fadeTime = 300;
+function upadateCaseNumber(product, price, isIncreasing){
+  const caseInput = document.getElementById(product + '-number');
+  let caseNumber = caseInput.value;
+          if(isIncreasing){
+              caseNumber = parseInt(caseNumber) + 1;
+          }
+         
+  else if(caseNumber > 0){
+         caseNumber = parseInt(caseNumber) - 1;
+       }
+     
+      caseInput.value = caseNumber;
+  // update case total
+  const caseTotal = document.getElementById(product + '-total');
+  caseTotal.innerText = caseNumber * price;
+  calculateTotal();
+  }
 
 
-/* Assign actions */
-$('.product-quantity input').change( function() {
-  updateQuantity(this);
+  function getInputvalue(product){
+      const productInput = document.getElementById(product + '-number');
+      const productNumber = parseInt(productInput.value);
+      return productNumber;
+  }
+  function calculateTotal(){
+      const phoneTotal = getInputvalue('phone') * 1219;
+      const caseTotal = getInputvalue('case') * 59;
+      const subTotal = phoneTotal + caseTotal;
+      const tax = subTotal / 10;
+      const totalPrice = subTotal + tax;
+
+      // update on the html
+      document.getElementById('sub-total').innerText = subTotal;
+      document.getElementById('tax-amount').innerText = tax;
+      document.getElementById('total-price').innerText = totalPrice;
+
+  }
+
+
+
+
+
+document.getElementById('case-plus').addEventListener('click',function(){
+      // const caseInput = document.getElementById('case-number');
+      // const caseNumber = caseInput.value;
+      // caseInput.value = parseInt(caseNumber) + 1;
+ upadateCaseNumber('case', 59 ,true);
 });
 
-$('.product-removal button').click( function() {
-  removeItem(this);
+document.getElementById('case-minus').addEventListener('click',function(){
+  // const caseInput = document.getElementById('case-number');
+//     const caseNumber = caseInput.value;
+//    if(caseInput.value > 1){
+//         caseInput.value = parseInt(caseNumber) - 1;
+//    }
+upadateCaseNumber('case', 59, false);
+});
+
+// phone prcie update using add event linstner
+document.getElementById('phone-plus').addEventListener('click',function(){
+  upadateCaseNumber('phone',1219, true);
 });
 
 
-/* Recalculate cart */
-function recalculateCart()
-{
-  var subtotal = 0;
-  
-  /* Sum up row totals */
-  $('.product').each(function () {
-    subtotal += parseFloat($(this).children('.product-line-price').text());
-  });
-  
-  /* Calculate totals */
-  var tax = subtotal * taxRate;
-  var shipping = (subtotal > 0 ? shippingRate : 0);
-  var total = subtotal + tax + shipping;
-  
-  /* Update totals display */
-  $('.totals-value').fadeOut(fadeTime, function() {
-    $('#cart-subtotal').html(subtotal.toFixed(2));
-    $('#cart-tax').html(tax.toFixed(2));
-    $('#cart-shipping').html(shipping.toFixed(2));
-    $('#cart-total').html(total.toFixed(2));
-    if(total == 0){
-      $('.checkout').fadeOut(fadeTime);
-    }else{
-      $('.checkout').fadeIn(fadeTime);
-    }
-    $('.totals-value').fadeIn(fadeTime);
-  });
+document.getElementById('phone-minus').addEventListener('click',function(){
+  upadateCaseNumber('phone',1219 , false);
+});
+
+// Função para remover o item
+function removeCartItem(event) {
+const cartItem = event.target.closest('.cart-item'); // Seleciona o item da sacola correspondente
+cartItem.remove(); // Remove o item da sacola
+
+calculateTotal(); // Recalcula o total após remover o item
 }
 
-
-/* Update quantity */
-function updateQuantity(quantityInput)
-{
-  /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.product-price').text());
-  var quantity = $(quantityInput).val();
-  var linePrice = price * quantity;
-  
-  /* Update line price display and recalc cart totals */
-  productRow.children('.product-line-price').each(function () {
-    $(this).fadeOut(fadeTime, function() {
-      $(this).text(linePrice.toFixed(2));
-      recalculateCart();
-      $(this).fadeIn(fadeTime);
-    });
-  });  
-}
-
-
-/* Remove item from cart */
-function removeItem(removeButton)
-{
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function() {
-    productRow.remove();
-    recalculateCart();
-  });
-}
+// Adiciona o evento de clique a todos os ícones de lixo
+document.querySelectorAll('.remove-item').forEach(button => {
+button.addEventListener('click', removeCartItem);
+});
