@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.image-container{
+.image-container, .image-container2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,11 @@
 .image-container img{
     width: auto;
     height: 300px;
+    border-radius: 10px;"
+}
+.image-container2 img{
+    width: auto;
+    height: 450px;
     border-radius: 10px;"
 }
 .text-container{
