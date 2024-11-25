@@ -1,6 +1,14 @@
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-self: center;
+}
+
 .grid-inicio{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    max-width: 1600px;
 }
 .image-container, .image-container2{
     display: flex;
