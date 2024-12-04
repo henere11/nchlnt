@@ -12,8 +12,10 @@ html {
     font-family: "Prosto One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
 }
 
 body {
     background: linear-gradient(#000,#004D52,#B4B4B4);
+    text-decoration: none;
 }

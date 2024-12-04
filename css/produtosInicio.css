@@ -16,6 +16,7 @@
 .titulo{
     color: white;
     font-size: 3.5rem;
+    text-decoration:none;
 }
 .linhaDivisoria{
     border: 2px solid #fff;
